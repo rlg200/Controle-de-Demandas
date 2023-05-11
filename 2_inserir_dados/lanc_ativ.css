@@ -1,0 +1,25 @@
+﻿@import '../0_css_apoio/reset.css';
+@import "../0_css_apoio/tabela1.css";
+@import "../0_css_apoio/tabela2.css";
+@import "../0_css_apoio/botoes.css";
+
+:root {
+
+	--tabela1_input_size: 150px;
+	--tabela1_input_letter_size: 17px;
+	--tabela1_letter_size: 17px;
+
+	--tabela1_td_height: 45px; 
+	--tabela1_td_width: 160px;
+
+
+	--tabela1_th_height: 74px; 
+}
+
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+
+}

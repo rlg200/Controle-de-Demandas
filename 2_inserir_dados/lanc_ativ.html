@@ -1,0 +1,94 @@
+﻿<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="lanc_ativ.css">
+	<script src = "lanc_ativ.js"></script>
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+<body> 
+<form method = "post" action = "lanc_ativ.php">
+	<table class = "tabela1">
+		<input type = "hidden" id = "escondido" name = "escondido" value = '0'>
+		<tr>
+			<th>
+				<label>Nome do Projeto:</label><br>
+				<a href = "cad_projetos.html">
+					<input type = "button" title = "Adicionar o Projeto" class = "btnmais_inf" value = "+">
+				</a>
+			</th>
+			<th>
+				<label>Responsável da atividade:</label><br>
+				<a href = "cad_pessoas.html">
+					<input type = "button" title = "Adicionar Pessoa" class = "btnmais_inf" value = "+">
+				</a>
+			</th>
+			<th>
+				<label>Horas Consumidas na atividade:</label>
+			</th>
+			<th>
+				<label>Data Inicio da atividade: </label>
+			</th>
+			<th>
+				<label>Data Fim da atividade: </label>
+			</th>
+			<th>
+				<label>Nome da atividade: </label><br>
+				<a href = "cad_campo.html">
+					<input type = "button" title = "Adicionar Atividade" class = "btnmais_inf" value = "+">
+				</a>
+			</th>
+			<th>
+				<label>Observações:</label>
+			</th>		
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name = "titulo_projeto_1" list = 'lista-projeto' required>
+				<datalist id="lista-projeto">
+					<option value="a">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name = "dono_atividade_1" list = 'lista-pessoas' required>
+				<datalist id="lista-pessoas">
+					<option value="b">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name = "horas_consumidas_1" required>
+			</td>
+			<td>
+				<input type="date" name="data_inicio_1" required>
+			</td>
+			<td>
+				<input type="date" name="data_fim_1" required>
+			</td>
+			<td>
+				<input type="text" name = "nome_atividade_1" list = 'lista-atividades' required>
+				<datalist id="lista-atividades">
+						<option value="c">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name="obs_1">
+			</td>
+		</tr>
+	</table>
+	<input type = "button" value = "+" onclick="addFields()" class = "btnmais_grd">
+	<br><br><br><br><br>
+	<table class = "tabela2">
+		<tr>
+			<td>
+				<input type="submit" name="lancar_ativ" class="botao_tab2" value="Lancar Atividades">
+			</td>
+			<td>
+				<input type="button" name="lancar_ativ" class="botao_tab2" value="Voltar" onclick = "goback ()">
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
+
+

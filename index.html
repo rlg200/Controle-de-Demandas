@@ -1,0 +1,33 @@
+﻿<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Integrador de Projetos - Techware</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="index.css">
+		<script src = "login.js"></script>
+	</head>
+	<body> 
+		<form method="post" action="index.php">
+			<div class = "tela_login">
+				<h1>Login</h1>
+				<br><br><br><br>
+				<div class = "login_field">
+					<label for="usuario" class = "texto">Usuário:</label>
+					<input type="text" name="usuario" required> 
+
+					<label for="senha" class = "texto">Senha:</label>
+					<input type="password" name="senha" required>
+				</div>
+				<br>
+				<form id = "div_login" action = "">
+					<input type="submit" name = "Login" id = "Login" value="Login" class = "login_button" onclick = "login ()">
+				</form>
+				<br><br>
+				<a href = "esq_senha.php">
+					<input type="button" name="esq_senha" class="esq_senha" value="esqueci a senha">
+				</a>
+			</div>
+		</form>
+	</body>
+</html>
+

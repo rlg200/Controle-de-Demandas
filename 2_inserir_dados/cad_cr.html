@@ -1,0 +1,67 @@
+﻿<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="cad_cr.css">
+	<script src = "../0_js_apoio/return.js"></script>
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+<body> 
+	<form method = "post" action = "cad_cr.php">
+	<table class = "tabela1">
+		<tr>
+			<td>
+				<label for="nome_projeto">Nome do Projeto:</label>
+				<input type="text" name="nome_projeto" list = "lista-projetos" required>
+				<datalist id="lista-projetos">
+					<option value="">
+				</datalist>
+			</td>
+			<td>
+				<a href = "cad_projetos.html">
+					<input type = "button" name = "" value = "+" class = "btnmais_lat">
+				</a>
+			</td>
+			<td rowspan = "3">
+				<label for="escopo_cr">Escopo da CR:</label>
+				<textarea type="text" name="escopo_cr" id = "escopo" required></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="numero_cr">Numero da CR:</label>
+				<input type="text" name="numero_cr" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="horas_vendidas">Horas Vendidas na CR:</label>
+				<input type="text" name="horas_vendidas" required>
+			</td>
+		</tr>
+	</table>
+	<br><br><br><br><br>
+	<table class = "tabela2">
+		<tr>
+			<td>
+				<input type="submit" name="cadastrar_cr" class = "botao_tab2" value="Cadastrar CR">
+			</td>
+			<td>
+				<input type="button" name="b1" class="botao_tab2" value="Voltar" onclick = "goback ()">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

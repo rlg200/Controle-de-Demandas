@@ -1,0 +1,46 @@
+input[type=button].btnmais_lat {
+    background: white;
+	height: auto;
+	width: auto;
+	border: none;
+	border-radius: 10px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	font-weight: 700;
+
+}
+
+
+input[type=button].btnmais_inf {
+	position: relative;
+    background: white;
+	height: auto;
+	width: auto;
+	border: none;
+	border-radius: 10px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	font-weight: 700;
+
+}
+
+
+.btnmais_grd {
+	border: none;
+	border-radius: 40px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	background: white;
+	height: 40px;
+	width: 40px;
+	margin-left: 50%;
+	margin-right: auto;
+	margin-top: 20px;
+	font-size: 28px;
+	font-weight: 700;
+	}
+
+
+
+
+

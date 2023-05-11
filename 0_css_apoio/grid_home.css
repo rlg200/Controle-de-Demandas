@@ -1,0 +1,43 @@
+header {
+	display: grid;
+	grid-template-columns: 10% 70% 20%;
+	grid-template-rows: 80% 20%;
+	height: 125px;
+}
+/*
+body {
+	height: 700px;
+}
+*/
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+#menu_dir{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+#titulo {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}
+
+#menu_esq {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 1;
+}	
+
+#titulo_2 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+}

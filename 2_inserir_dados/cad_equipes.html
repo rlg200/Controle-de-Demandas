@@ -1,0 +1,82 @@
+﻿<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="cad_equipes.css">
+	<script src="cad_equipes.js"></script>
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+<body> 
+<form method = "post" action = "cad_equipes.php">
+	<table class = "tabela1">
+		<input type = "hidden" id = "escondido" name = "escondido" value = '0'>
+		<tr>
+			<th>
+				<label>Nome do Projeto do Time:</label><br>
+				<a href = "cad_projetos.html">
+					<input type = "button" value = "+" class = "btnmais_inf" >
+				</a>
+			</th>
+			<th>
+				<label>Integrante do Time:</label><br>
+				<a href = "cad_pessoas.html">
+					<input type = "button" value = "+" class = "btnmais_inf" title = "Adicionar Pessoa">
+				</a>
+			</th>
+			<th>
+				<label>Cargo do integrante no Projeto:</label><br>
+				<a href = "cad_campo.html">
+					<input type = "button" value = "+" class = "btnmais_inf" title = "Adicionar Cargo">
+				</a>
+			</th>
+			<th>
+				<label>Data Inicio da atuação do integrante:</label>
+			</th>
+			<th>
+				<label>Data Fim da atuação do integrante:</label>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="titulo_projeto_1" list = "lista-projetos" required>
+				<datalist id="lista-projetos">
+					<option value="a">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name="integrante_time_1" list = "lista-pessoas" required>
+				<datalist id="lista-pessoas">
+					<option value="b">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name="cargo_integrante_1" list="lista-cargos" required>
+				<datalist id="lista-cargos">
+					<option value="c">
+				</datalist>
+			</td>
+			<td>
+				<input type="date" name="data_inicio_1" required>
+			</td>
+			<td>
+				<input type="date" name="data_fim_1">
+			</td>
+		</tr>
+	</table>
+	<input type = "button" onclick= "addFields()" class = "btnmais_grd" value = "+">
+	<br><br><br><br><br>
+	<table class = "tabela2">
+		<tr>
+			<td>
+				<input type="submit" name="cadastrar_pessoa" class="botao_tab2" value="Cadastrar Pessoa">
+			</td>
+			<td>
+				<input type="button" class = "botao_tab2" value="Voltar" onclick = "goback ()">
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
+
+

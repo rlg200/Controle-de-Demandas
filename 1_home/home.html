@@ -1,0 +1,101 @@
+﻿<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="icon" href="../0_imagens/icone_site.png" type="image/x-icon">
+	<script src = "home.js"></script>
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+<body>
+	<header id = "header">
+		<div id = "menu_esq">
+			<div id="nav-menu">
+				<div class="bg"></div>
+				<div class="button" tabindex="0">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</div>
+				<ul id="content-menu" tabindex="0">
+					<li><div id = "menu" tabindex="0">
+							<a>Item 1 <span class = "tinyarrow_right"></span></a>
+							<div id = "submenu1">
+								<ul>
+									<li><a name = "Cadastro de Empresas" id = "../2_inserir_dados/cad_empresas" onclick = "clique (this)">Empresas</a></li>
+									<li><a name = "Cadastro de Pessoas" id = "../2_inserir_dados/cad_pessoas" onclick = "clique (this)">Pessoas</a></li>
+									<li><a name = "Cadastro de Outros Campos" id = "../2_inserir_dados/cad_campo" onclick = "clique (this)">Outros Campos</a></li>
+									<li><a name = "Cadastro de CRs" id = "../2_inserir_dados/cad_cr" onclick = "clique (this)">CRs</a></li>
+									<li><a name = "Cadastro de Membros de Equipe" id = "../2_inserir_dados/cad_equipes" onclick = "clique (this)">Equipes</a></li>
+									<li><a name = "Cadastro de Projetos" id = "../2_inserir_dados/cad_projetos" onclick = "clique (this)">Projetos</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id = "menu" tabindex="0">
+							<a>Item 2 <span class = "tinyarrow_right"></span></a>
+							<div id = "submenu2">
+								<ul>
+									<li><a name = "Lançamento de Atividades" id = "../2_inserir_dados/lanc_ativ" onclick = "clique (this)">Atividades</a></li>
+									<li><a name = "Lançamento de Horas" id = "../2_inserir_dados/lanc_horas" onclick = "clique (this)">Horas</a></li>
+									<li><a name = "Lançamento de Pagamentos" id = "../2_inserir_dados/lanc_pag" onclick = "clique (this)">Pagamentos</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div id = "menu" tabindex="0">
+							<a>Item 3 <span class = "tinyarrow_right"></span></a>
+							<div id = "submenu3">
+								<ul>
+									<li><a name = "Relatório 1" id = "../3_extrair_dados/relat_1" onclick = "clique (this)">Relatório 1</a></li>
+									<li><a>Item 3.2</a></li>
+									<li><a>Item 3.3</a></li>
+									<li><a></a></li>
+									<li><a></a></li>
+									<li><a></a></li>
+									<li><a></a></li>								
+									<li><a></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li><a name = "Manutenção de Dados" id = "../3_extrair_dados/manut" onclick = "clique (this)">Manutenção</a></li>
+					<li><a>Item 5</a></li>
+					<li><a>Item 6</a></li>
+					<li><a>Item 7</a></li>
+				</ul>
+			</div>
+		</div>
+		<button id = "../3_extrair_dados/inicio" name = "Inicio" class = "casa" onclick = "clique (this)">
+			<i class="casa-teto"></i>
+			<span class = "fill-telhado"></span>
+			<span class = "casa-parede-esq"></span>	
+			<span class = "casa-chao"></span>
+			<span class = "casa-parede-dir"></span>
+		</button>
+		<div id = "notificações" class = "sino" name = "notificacao">
+			<div class = "cabeca"></div>
+			<div class = "circulo"></div>
+			<div class = "retangulo-corpo"></div>
+			<div class = "borda-fundo"></div>
+			<div class = "rentagulo-preto-fundo"></div>
+			<div class = "semi-circulo"></div>
+		</div>
+		<div id = "titulo">CDT - Controle de Demandas Techware</div>
+		<div id = "menu_dir">
+			<div class = "dropdown" tabindex="0">
+				<span class="arrow"></span> <img src = "../0_imagens/icone_perfil.png">
+				<div class = "dropdown-child">
+					<a name = "Dados de Perfil" id = "../3_extrair_dados/perfil" onclick = "clique (this)">Perfil</a>
+					<a name = "Acompanhamento de Demandas" id = "../3_extrair_dados/acomp_dem" onclick = "clique(this)">Acompanhe suas Demandas</a>
+					<a id = "index" href = "../1_login/index.html">Logoff</a>
+				</div>
+			</div>
+		</div>
+		<p id = "titulo_2"> Inicio </p>
+	</header>
+	<iframe src = "../3_extrair_dados/acomp_dem.html" id = "pagina" name = "inicio"></iframe>
+</body>
+</html>

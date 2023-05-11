@@ -1,0 +1,47 @@
+﻿<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="cad_campo.css">
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+
+<body> 
+<form method = "post" action = "cad_campo.php">
+	<table class = "tabela1">
+		<tr>
+			<td class = "campos">
+				<label for="tipo_campo">Escolha o tipo do Campo:</label>
+				<select name = 'tipo_campo' id = "tipo_campo" required>
+					<option></option>
+					<option>AREA</option>
+					<option>ATIVIDADE</option>
+					<option>CARGO</option>
+					<option>PRODUTO</option>
+				</select>
+			</td>
+		</tr>
+		<tr id="linha_final">
+			<td>
+				<label for="valor_campo">Insira o valor a ser adicionado:</label>
+				<input type="text" name="valor_campo" required>
+			</td>
+		</tr>
+	</table>
+	<br><br><br><br><br>
+	<table class = "tabela2">
+		<tr>
+			<td>
+				<input type="submit" name="cadastrar_campo" class="botao_tab2" value="Cadastrar Campo">
+			</td>
+			<td>
+				<input type="button" class="botao_tab2" value="Voltar" onclick ="goback ()">
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+<html>
+<script src = "cad_campo.js"></script>
+
+

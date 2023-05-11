@@ -1,0 +1,22 @@
+﻿@import '../0_css_apoio/reset.css';
+@import "../0_css_apoio/tabela1.css";
+@import "../0_css_apoio/tabela2.css";
+@import "../0_css_apoio/botoes.css";
+
+
+table {
+	margin-left: 320px;
+	margin-right: auto;
+	margin-top: 20px;
+
+}
+
+#escopo {
+	height: 100px;
+	width: 400px;
+	border: 2px solid black;
+	background: none;
+	vertical-align: top;
+	resize: none;
+
+}

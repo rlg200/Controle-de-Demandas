@@ -1,0 +1,80 @@
+﻿@import '../0_css_apoio/reset.css';
+@import '../0_css_apoio/menu_dir.css';
+@import '../0_css_apoio/menu_esq.css';
+@import '../0_css_apoio/flecha.css';
+@import '../0_css_apoio/submenu.css';
+@import '../0_css_apoio/casa.css';
+@import '../0_css_apoio/sino.css';
+@import '../0_css_apoio/grid_home.css';
+
+
+:root {
+/*Cores dos icones e das barras de menu e de submenu*/
+
+--icon_color: black;
+--menu_color:  rgb(117, 116, 116) ;
+--menu_letter_color: var(--icon_color);
+--submenu_color: rgb(172, 172, 172) ;
+--submenu_letter_color: white;
+
+/*Cores de fundo e das letras da barras superiores*/
+--titulo1_background_color: linear-gradient(to left bottom,  dimgray, white);
+--titulo1_letter_color: var(--icon_color);
+
+--titulo2_background_color: #9327e69a;
+--titulo2_letter_color: black;
+
+/*Localizaçao dos icones da casa e do sino*/
+
+--bell_top_location: 6px;
+--bell_left_location: 900px;
+
+--house_top_location: 10px;
+--house_left_location: 744px;
+
+/*Tamanho e localização dos icones de menu*/
+
+--menudir_top_location: 10px;
+--menudir_left_location: 130px;
+--menudir_n_items: 3;
+
+
+/*Numero de items em cada submenu para acertar o tamanho*/
+
+--menuesq_submenu1_n_items: 6;
+--menuesq_submenu2_n_items: 3;
+--menuesq_submenu3_n_items: 3;
+
+} 
+
+body {
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+	  background-color: rgb(192,192,192);
+}
+
+header {
+	background-image: var(--titulo1_background_color);
+  text-align: left;
+  font-size: 20px;
+}
+
+#titulo {
+	margin-top: 40px;
+  color: var(--titulo1_letter_color);
+}
+
+#titulo_2 {
+	background-color: var(--titulo2_background_color);
+  position: relative;
+	opacity: 0.9;
+  text-align: left;
+  vertical-align: auto;
+  font-size: 22px;
+  color: var(--titulo2_letter_color);
+}
+
+
+
+

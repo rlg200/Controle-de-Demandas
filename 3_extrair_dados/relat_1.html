@@ -1,0 +1,41 @@
+﻿<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="relat_1.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+<script>
+	google.charts.load('current', {'packages':['corechart']});
+
+function drawpizza () {
+
+	var tabela = google.visualization.arrayToDataTable([
+		['Year', 'Dollars'],
+		['2004',  1000],
+        ['2005',  1170],
+        ['2006',  660],
+        ['2007',  1030]
+
+        ]);
+
+		var opcoes = {
+			'title':'Tipos de Gastos',
+			'height': 300,
+			'width': 400
+			};
+	
+		var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
+		grafico.draw(tabela, opcoes);
+    }
+	
+	google.charts.setOnLoadCallback(drawpizza);
+
+</script>
+<body> 
+
+	<div id = "graficoPizza" class = "div1"></div>
+		
+</body>
+</html>

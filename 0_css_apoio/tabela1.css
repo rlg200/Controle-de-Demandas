@@ -1,0 +1,43 @@
+.tabela1 th {
+	text-align: center;
+	font-size: var(--tabela1_letter_size);
+	padding: 3px;
+    height: var(--tabela1_th_height);
+    width: var(--tabela1_td_width);
+    border: 1px solid black;
+
+}
+
+.tabela1 td{
+	text-align: right;
+	font-size: var(--tabela1_letter_size);
+	padding: 3px;
+    height: var(--tabela1_td_height);
+    width: var(--tabela1_td_width);
+    border: 1px solid black;
+	}
+
+.tabela1 #td_button {
+
+    width: 20px;
+}    
+
+.tabela1 input {
+        height: 28px;
+        width: var(--tabela1_input_size);
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #4F4F4F;
+        margin-bottom: 10px;
+        color: black;
+        font-size: var(--tabela1_input_letter_size);
+    }
+    
+.tabela1 select {
+        height: 28px;
+        width: var(--tabela1_input_size);
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #4F4F4F;
+        margin-bottom: 10px;
+    }

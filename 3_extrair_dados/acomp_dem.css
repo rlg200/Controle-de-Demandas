@@ -1,0 +1,92 @@
+@import "../0_css_apoio/reset.css";
+@import "../0_css_apoio/tabela1.css";
+@import "../0_css_apoio/tabela2.css";
+@import "../0_css_apoio/botoes.css";
+@import "../0_css_apoio/flecha.css";
+
+
+:root {
+    --icon_color: black;
+    --submenu_letter_color: black;
+
+}
+
+
+table {
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.tabela1 {
+
+    border: 2px solid black;
+}
+
+.tabela1 th {
+
+    border-bottom: 2px solid black;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+a {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 3px;
+}
+
+
+.linha_detalhada td {
+    padding: 0px;
+    border:none;
+}
+
+.linha_detalhada {
+    height: 0px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.escondido {
+    height: 0px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#tabela_1:focus-within .escondido {
+    height: 200px;
+}
+
+#tabela_1:focus-within #linha_detalhada_1 {
+    height: 200px;
+}
+
+
+#tabela_2:focus-within .escondido {
+    height: 200px;
+}
+
+#tabela_2:focus-within #linha_detalhada_2 {
+    height: 200px;
+}
+
+
+#tabela_3:focus-within .escondido {
+    height: 200px;
+}
+
+#tabela_3:focus-within #linha_detalhada_3 {
+    height: 200px;
+}
+
+
+

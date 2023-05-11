@@ -1,0 +1,66 @@
+.casa {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: var(--house_left_location);
+  top: var(--house_top_location);
+	background: none;
+	border: none;
+}
+
+.fill-telhado {
+  position: absolute;
+  width: 22px;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid var(--icon_color);
+  margin-left: -21px;
+  margin-top: 7px;
+
+}
+
+.casa-teto {
+  border: solid var(--icon_color);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 9px;
+  transform: rotate(-135deg);
+  position: relative;
+  bottom: -6px; 
+  
+}
+
+.casa-parede-esq {
+  display: block;
+  width: 18px;
+  height: 4px;
+  background: var(--icon_color);
+  transform: rotate(90deg);
+  position: relative;
+  left: 33px;
+  top: -3px;
+}
+
+.casa-chao {
+  display: block;
+  width: 20px;
+  height: 15px;
+  background: var(--icon_color);
+  position: relative;
+  left: 40px;
+  top: -9px;
+}
+
+.casa-parede-dir {
+  display: block;
+  width: 18px;
+  height: 4px;
+  background: var(--icon_color);
+  position: relative;
+  transform: rotate(90deg);
+  left: 49px;
+  top: -20px;
+}
+
+

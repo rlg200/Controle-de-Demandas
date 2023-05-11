@@ -1,0 +1,87 @@
+﻿<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="lanc_horas.css">
+	<script src = 'lanc_horas.js'></script>
+	<script src = "../0_js_apoio/muda_nome.js"></script>
+</head>
+<body> 
+<form method = "post" action = "lanc_horas.html" >
+	<table class = "tabela1">
+		<input type = "hidden" id = "escondido" name = "escondido" value = '0'>
+		<tr>
+			<th>
+				<label>Nome do Projeto:</label><br>
+				<a href = "cad_projetos.html">
+					<input type = "button" class = "btnmais_inf" title = "Adicionar Projeto" value = "+">
+				</a>
+			</th>
+			<th>
+				<label>Nome da Atividade:</label><br>
+				<a href = "cad_campo.html">
+					<input type = "button" class = "btnmais_inf" title = "Adicionar Atividade" value = "+">
+				</a>
+			</th>
+			<th>
+				<label>Numero de Horas trabalhadas:</label>
+			</th>
+			<th>
+				<label>Responsável: </label><br>
+				<a href = "cad_pessoas.html">
+					<input type = "button" class = "btnmais_inf" title = "Adicionar Pessoa" value = "+">
+				</a>
+			</th>
+			<th>
+				<label>Horas Faturadas: </label>
+			</th>
+			<th>
+				<label>Data</label>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" name="titulo_projeto_1" list = "lista-projetos" required>
+				<datalist id="lista-projetos">
+					<option value="a">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name="nome_atividade_1" list="lista-atividades" required>
+				<datalist id="lista-atividades">
+					<option value="b">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name="horas_trabalhadas_1" required>
+			</td>
+			<td>
+				<input type="text" name="responsavel_ativ_1" list="lista-pessoas" required>
+				<datalist id="lista-pessoas">
+					<option value="c">
+				</datalist>
+			</td>
+			<td>
+				<input type="text" name="horas_faturadas_1" required>
+			</td>
+			<td>
+				<input type= "date" name = "data_1" required>
+			</td>
+		</tr>
+	</table>
+	<button type = "button" onclick="addFields()" class = "btnmais_grd">+</button>
+	<br><br><br><br><br>
+	<table class = "tabela2">
+		<tr>
+			<td>
+				<input type="submit" name="lancar_horas" class="botao_tab2" value="Lançar Horas">
+			</td>
+			<td>
+				<input type="button" class="botao_tab2" value="Voltar" onclick = "goback ()">
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

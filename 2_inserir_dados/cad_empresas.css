@@ -1,0 +1,19 @@
+﻿@import '../0_css_apoio/reset.css';
+@import "../0_css_apoio/tabela1.css";
+@import "../0_css_apoio/tabela2.css";
+
+:root {
+	--tabela1_input_size: 100px;
+	--tabela1_input_letter-size:17px;
+	--tabela1_letter_size: 17px;
+	
+	--tabela1_td_height: 45px; 
+	--tabela1_td_width: 300px ;
+}
+
+table {
+	text-align: center;
+	margin-left: 250px;
+	margin-top: 20px;
+}
+

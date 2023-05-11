@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Integrador de Projetos - Techware</title>
+	<link rel="stylesheet" href="cad_empresas.css">
+	<script src="cad_empresas.js"></script>
+
+</head>
+
+<body> 
+	<form>
+	
+	<table class = "tabela1">
+		<tr>
+			<td>
+				<label for="nome_empresa">Nome Empresa: </label>
+				<input type="text" name="nome_empresa" id = "nome_empresa" required> 
+			</td>
+			<td>
+				<label for="endereco">Endereco: </label>
+				<input type="text" name="endereco" id = "endereco">
+			</td>
+			<td>
+				<label for="versao_rhev">Versão do Rhevolution: </label>			
+				<input type="text" id = "versao_rhev" name="versao_rhev">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="ativ_econom">Atividade Economica: </label>
+				<input type="text" name="ativ_econom" id = "ativ_econom">
+			</td>
+			<td>
+				<label for="bairro">Bairro: </label>
+				<input type="text" name="bairro" id = "bairro">
+			</td>
+			<td>
+				<label for="versao_banco">Versão do Banco:</label>
+				<input type="text" id = "versao_banco" name="versao_banco">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="grupo_empresarial">Grupo Empresarial: </label>
+				<input type="text" name="grupo_empresarial" id = "grupo_empresarial">
+			</td>
+			<td>
+				<label for="complemento">Complemento: </label>
+				<input type="text" name="complemento" id = "complemento">
+			</td>
+			<td>
+				<label for="versao_banco">Release do Rhevolution: </label>
+				<input type="text" id = "versao_banco" name="versao_banco">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="cnpj">CNPJ: </label>
+				<input type="text" name="cnpj" id = "cnpj">
+			</td>
+			<td>
+				<label for="pais">País: </label>
+				<input type="text" list = "UF" id = "pais" name="pais" >
+			</td>
+			<td>
+				<label for="registros_contratados">Numero de Registros Contratados: </label>
+				<input type="text" id = "registros_contratados" name="registros_contratados">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for="numero_colab">Numero de Colaboradores: </label>
+				<input type="text" id = "numero_colab" name="numero_colab">
+			</td>		
+
+			<td>
+				<label for="estado">Estado: </label>
+				<input type="text" id = "estado" name="estado" list = "Estado">
+			</td>
+			<td>
+				<label for="cidade">Cidade:</label>
+				<input type="text" id = "cidade" name="cidade" list = "Cidade">
+			</td>	
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+			<td>
+				<label for="inscricao_estadual">Inscricao Estadual:</label>
+				<input type="text" name="inscricao_estadual" id = "inscricao_estadual">
+			</td>
+		</tr>
+	</table>
+	<br><br><br>
+	<table class = "tabela2">
+		<tr>
+			<td>
+				<input type="submit" name="cadastrar_empresa" id="cadastrar_empresa" class="botao_tab2" value="Cadastrar Empresa">
+			</td>
+			<td>
+				<input type="button" name="voltar" id="voltar" class="botao_tab2" value="Voltar" onclick = "goback ()">
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
+<script src="../0_js_apoio/return.js"></script>

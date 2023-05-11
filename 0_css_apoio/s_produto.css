@@ -1,0 +1,54 @@
+:root {
+  --myselectoption_width: 315px;
+
+}
+
+.multiselect {
+    width: 100%;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  #mySelectOptions {
+    display: none;
+    border: 0.5px #7c7c7c solid;
+    background-color: #ffffff;
+    max-height: 150px;
+    width: var(--myselectoption_width);
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 1;
+    left: calc(var(--tabela1_location_left) + var(--tabela1_td_width) - var(--myselectoption_width) + 3px);
+    top: calc(var(--tabela1_location_top) - 15px + var(--tabela1_td_height)*7);
+  }
+  
+  .tabela1 input[type='checkbox'] {
+      width: 50px;
+  
+  }
+  
+  #mySelectOptions label {
+    display: block;
+    font-weight: normal;
+    white-space: nowrap;
+    min-height: 1.2em;
+    background-color: #ffffff00;
+    padding: 0 2.25rem 0 .75rem;
+  }
+  
+  
+  #mySelectOptions label:hover {
+    background-color: #1e90ff;
+  }
+  
+  

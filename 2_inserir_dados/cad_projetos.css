@@ -1,0 +1,33 @@
+﻿@import "../0_css_apoio/reset.css";
+@import "../0_css_apoio/tabela1.css";
+@import "../0_css_apoio/tabela2.css";
+@import "../0_css_apoio/s_produto.css";
+@import "../0_css_apoio/botoes.css";
+
+:root {
+	--tabela1_input_size:150px;
+	--tabela1_input_letter-size:17px;
+	--tabela1_letter_size: 17px;
+	--tabela1_td_height: 45px;
+	--tabela1_td_width: 500px;
+
+	--tabela1_location_left: 200px;
+	--tabela1_location_top: 20px;
+}
+
+table {
+	margin-left: var(--tabela1_location_left);
+	margin-right: auto;
+	margin-top: var(--tabela1_location_top);
+}
+
+
+#escopo {
+	height: 200px;
+	width: 350px;
+	border: 2px solid black;
+	background: none;
+	vertical-align: top;
+	resize: none;
+
+}

@@ -1,0 +1,36 @@
+.lixo {
+	display: inline-block;
+	position: absolute;
+	margin-left: var(--lixo_location_left);
+	margin-top: var(--lixo_location_top);
+}
+
+.tampa_sup {
+	display: block;
+	width: 5px;
+	height: 2px; 
+	background: var(--lixo_color);
+	margin-left: 7.5px;
+	border-radius: 2px 2px 0px 0px;
+}
+
+.tampa_inf {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: var(--lixo_color);
+	margin-top: -1px;
+	border-radius: 1px;
+}
+
+.corpo-lixo {
+	background-color: var(--lixo_color);
+	margin-top: 1px;
+	width: 20px;
+	height: 20px;
+	border-radius: 0px 0px 3px 3px;
+}
+
+
+
+
